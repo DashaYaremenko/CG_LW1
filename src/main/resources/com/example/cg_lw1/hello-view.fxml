@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="522.0" prefWidth="815.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cg_lw1.HelloController">
+   <children>
+      <AnchorPane prefHeight="466.0" prefWidth="815.0">
+         <children>
+            <Label layoutX="26.0" layoutY="423.0" text="X">
+               <font>
+                  <Font name="Bell MT" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numberX" layoutX="55.0" layoutY="417.0" prefHeight="26.0" prefWidth="75.0" />
+            <Label layoutX="164.0" layoutY="423.0" text="Y">
+               <font>
+                  <Font name="Bell MT" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numberY" layoutX="187.0" layoutY="417.0" prefHeight="26.0" prefWidth="75.0" />
+            <Button layoutX="457.0" layoutY="417.0" mnemonicParsing="false" onAction="#buildGraph" text="Постройка графіка" textFill="#194e23" />
+            <Label layoutX="352.0" layoutY="14.0" text="Функція y=cos(x^2)/(x+1)">
+               <font>
+                  <Font name="Bell MT" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="294.0" layoutY="422.0" text="Інтервал" />
+            <TextField fx:id="intervalG" layoutX="352.0" layoutY="417.0" prefHeight="26.0" prefWidth="75.0" />
+            <LineChart fx:id="graph" layoutX="227.0" layoutY="56.0" prefHeight="327.0" prefWidth="400.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
